@@ -11,6 +11,6 @@ return {
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.motion.harpoon" },
 }
