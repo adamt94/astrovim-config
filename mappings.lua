@@ -17,6 +17,23 @@ return {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     --   desc = "Previous buffer",
     -- },
+    ["<Esc>"] = {
+      "<C-\\><C-n>",
+      desc = "Normal Vim Mode",
+    },
+    ["<C-t>"] = {
+      "<cmd>ToggleTerm<CR>",
+      desc = "Toggle Terminal",
+    },
+
+    -- Harpoon
+    ["<leader>1"] = { function() require("harpoon.ui").nav_file(1) end, desc = "Goto mark 1" },
+    ["<leader>2"] = { function() require("harpoon.ui").nav_file(2) end, desc = "Goto mark 2" },
+    ["<leader>3"] = { function() require("harpoon.ui").nav_file(3) end, desc = "Goto mark 3" },
+    ["<leader>4"] = { function() require("harpoon.ui").nav_file(4) end, desc = "Goto mark 4" },
+    ["<leader>5"] = { function() require("harpoon.ui").nav_file(5) end, desc = "Goto mark 5" },
+    ["<leader>6"] = { function() require("harpoon.ui").nav_file(6) end, desc = "Goto mark 6" },
+    ["<leader>7"] = { function() require("harpoon.ui").nav_file(6) end, desc = "Goto mark 6" },
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
@@ -36,5 +53,13 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    ["<Esc>"] = {
+      "<C-\\><C-n>",
+      desc = "Normal Vim Mode",
+    },
+    ["<C-t>"] = {
+      "<cmd>ToggleTerm<CR>",
+      desc = "Toggle Terminal",
+    },
   },
 }
