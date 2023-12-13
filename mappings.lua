@@ -64,6 +64,10 @@ return {
       "<C-\\><C-n>",
       desc = "Normal Vim Mode",
     },
+    ["<C-/>"] = {
+      "<Esc>",
+      desc = "normal escape",
+    },
     ["<C-t>"] = {
       "<cmd>ToggleTerm<CR>",
       desc = "Toggle Terminal",
