@@ -61,7 +61,7 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
     ["<Esc>"] = {
-      "<C-\\><C-n>",
+      "<cmd>ToggleTerm<CR>",
       desc = "Normal Vim Mode",
     },
     ["<C-/>"] = {
